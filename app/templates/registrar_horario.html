@@ -1,0 +1,33 @@
+{% extends "menu_almacen.html" %}
+{% block contenedor %}
+<h1 class='text-center my-5'>Registrar Horario Personal</h1>
+<div class='container my-5'>
+    <form>
+        <div class="mb-3">
+            <label for="" class="form-label">Id Registro</label>
+            <input type="text" class="form-control" id="textId">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Nombre Tecnico</label>
+            <input type="text" class="form-control" id="textNombre">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Fecha Registro</label>
+            <input type="date" class="form-control" id="textFechaRegistro">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Hora Inicio</label>
+            <input type="time" class="form-control" id="textHoraInicio">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Hora Salida</label>
+            <input type="time" class="form-control" id="textHoraSalida">
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Comentario</label>
+            <input type="text" class="form-control" id="textComentario">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock contenedor %}

@@ -1,0 +1,104 @@
+{% extends "menu_almacen.html" %}
+{% block contenedor %}
+<div class="container my-5">
+  <div class="row g-4">
+    <!-- Card Horario -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-header bg-primary text-white">
+          <i class="bi bi-calendar-week me-2"></i>Tabla Horario
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Horario de trabajo</h5>
+          <p class="card-text">Registro diario de entrada y salida de los trabajadores.</p>
+          <a href="/enlace_tabla_horario/" class="btn btn-primary w-100">Ir a Horarios</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Hora Extras -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-header bg-secondary text-white">
+          <i class="bi bi-clock-history me-2"></i>Tabla Hora Extras
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Horas extra</h5>
+          <p class="card-text">Control de horas extra trabajadas por cada empleado.</p>
+          <a href="#" class="btn btn-secondary w-100">Ir a Horas Extras</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Recepción -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-header bg-success text-white">
+          <i class="bi bi-box-seam me-2"></i>Tabla Recepción
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Recepción de materiales</h5>
+          <p class="card-text">Registra las entradas de materiales y su cantidad.</p>
+          <a href="#" class="btn btn-success w-100">Ir a Recepción</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Salida -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-header bg-danger text-white">
+          <i class="bi bi-truck me-2"></i>Tabla Salida
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Salida de materiales</h5>
+          <p class="card-text">Registra las salidas de materiales y su cantidad.</p>
+          <a href="#" class="btn btn-danger w-100">Ir a Salidas</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Vehículo Cambios Componentes -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-header bg-warning text-dark">
+          <i class="bi bi-car-front me-2"></i>Tabla Vehículo
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Cambios de componentes</h5>
+          <p class="card-text">Control de cambios de aceite y líquidos, con fecha de vencimiento.</p>
+          <a href="#" class="btn btn-warning w-100">Ir a Vehículos</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Técnico Mecánico -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-header bg-info text-white">
+          <i class="bi bi-tools me-2"></i>Tabla Técnico Mecánico
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Tickets de trabajo</h5>
+          <p class="card-text">Gestiona los tickets de trabajo por placa, mecánico y estado.</p>
+          <a href="#" class="btn btn-info w-100">Ir a Técnicos</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Inventario -->
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm h-100">
+        <div class="card-header bg-dark text-white">
+          <i class="bi bi-clipboard-data me-2"></i>Tabla Inventario
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Inventario general</h5>
+          <p class="card-text">Cantidad exacta de productos y materiales en almacén.</p>
+          <a href="#" class="btn btn-dark w-100">Ir a Inventario</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock contenedor %}
