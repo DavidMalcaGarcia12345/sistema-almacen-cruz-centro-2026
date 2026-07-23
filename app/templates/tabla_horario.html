@@ -11,18 +11,23 @@
             <th scope="col">Hora Inicio</th>
             <th scope="col">Hora Final</th>
             <th scope="col">Comentario</th>
+            <th scope="col">Opcion 1</th>
+            <th scope="col">Opcion 2</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-        <th scope="row">1</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+            {% for x in tabla_horario %}
+                    <td>{{ x.Id_tabla_horario }}</td>
+                    <td>{{ x.Nombre_tabla_horario }}</td>
+                    <td>{{ x.Fecha_inicio_horario }}</td>   
+                    <td>{{ x.Hora_inicio_horario }}</td>
+                    <td>{{ x.Hora_final_horario }}</td>
+                    <td>{{ x.Comentario_horario }}</td>
+                    <td><a class='btn btn-danger' href='#'>Eliminar</a></td>
+                    <td><a class='btn btn-warning' href='#'>Actualizar</a></td>
+                </tr>
+            {% endfor %}
     </tbody>
     </table>
 </div>

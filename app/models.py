@@ -1,9 +1,9 @@
 from django.db import models
 
-# Create your models here.
-class  Tabla_Horario(models.Model):
+class Tabla_Horario_Tecnico(models.Model):
     Id_tabla_horario = models.CharField(max_length=250)
     Nombre_tabla_horario = models.CharField(max_length=250)
+    Fecha_inicio_horario = models.DateField()
     Hora_inicio_horario = models.TimeField()
     Hora_final_horario = models.TimeField()
     Comentario_horario = models.CharField(max_length=250)
