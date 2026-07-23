@@ -3,10 +3,10 @@ from django.db import models
 # Create your models here.
 class  Tabla_Horario(models.Model):
     Id_tabla_horario = models.CharField(max_length=250)
-    Nombre_tabla_horario = models.TextField(max_length=250)
+    Nombre_tabla_horario = models.CharField(max_length=250)
     Hora_inicio_horario = models.TimeField()
     Hora_final_horario = models.TimeField()
-    Comentario_horario = models.TextField(max_length=250)
+    Comentario_horario = models.CharField(max_length=250)
 
     def __str__(self):
         return f"{self.Id_tabla_horario} - {self.Nombre_tabla_horario}"
