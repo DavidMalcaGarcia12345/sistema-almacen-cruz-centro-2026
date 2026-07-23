@@ -4,9 +4,6 @@ from django.http import HttpResponse
 def login_usuario(request): 
     return render(request , 'login_usuario.html')
 
-def enlace_usuario(request): # para ingresar antes de login tiene que crear usuario
-    return render(request , 'registrar_usuario.html')
-
 def enlace_panel_control_almacen(request):
     return render(request , 'panel_control_almacen.html')
 

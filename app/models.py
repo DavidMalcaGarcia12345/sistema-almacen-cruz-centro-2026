@@ -45,10 +45,19 @@ class Tabla_Cambio_Material_Vehicular(models.Model):
     Comentario_cambio_material_vehicular = models.CharField(max_length=250)
 
 class Tabla_Inventario(models.Model):
-    pass 
-
+    Id_tabla_inventario = models.CharField(max_length=250)
+    Fecha_tabla_inventario = models.DateField()
+    Nombre_tabla_inventario = models.CharField(max_length=250)
+    Descripcion_tabla_inventario = models.CharField(max_length=250)
+    Cantidad_tabla_inventario = models.CharField(max_length=250)
+    Comentario_tabla_inventario = models.CharField(max_length=250)
+    
 class Tabla_Tecnico_Mecanico(models.Model):
-    pass 
-
-class Tabla_Trabajo_Mecanico(models.Model):
-    pass
+    Id_tabla_tecnico_mecanica = models.CharField(max_length=250) 
+    Fecha_tabla_tecnico_mecanica = models.DateField()
+    Nombre_tabla_tecnico_mecanica = models.CharField(max_length=250)
+    Placa_tabla_tecnico_mecanica = models.CharField(max_length=250)
+    Padron_tabla_tecnico_mecanico = models.CharField(max_length=250)
+    Trabajo_tabla_tecnico_mecanico = models.CharField(max_length=250)
+    Comentario_tabla_tecnico_mecanico = models.CharField(max_length=250)
+    
